@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate class</title>
+</head>
+<body>
+<script>
+    let name = prompt("Enter the name class");
+
+    function checkClass(str) {
+        let check = /^[A,C,P][0-9]{4}[G,H,I,K,L,M]$/;
+        if (check.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    alert(checkClass(name));
+</script>
+</body>
+</html>
